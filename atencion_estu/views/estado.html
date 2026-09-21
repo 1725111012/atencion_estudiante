@@ -1,0 +1,15 @@
+$def with (estudiantes, total)
+<html>
+<body>
+<h1>Estado de la fila</h1>
+
+$if total == 0:
+    <p><b>¡Alerta! La fila está vacía, no hay estudiantes esperando.</b></p>
+$else:
+    <p>Estudiantes esperando: <b>$total</b></p>
+    $for id, matricula, carrera, nombre, tramite in estudiantes:
+        <p>$nombre - $carrera - $tramite (Matrícula: $matricula)</p>
+
+<p><a href="/">Regresar</a></p>
+</body>
+</html>

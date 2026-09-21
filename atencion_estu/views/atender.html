@@ -1,0 +1,14 @@
+$def with (estudiante)
+<html>
+<body>
+<h1>Atender estudiante</h1>
+$if estudiante:
+    <p>Atendiendo a: <b>$estudiante[3]</b></p>
+    <p>Matrícula: $estudiante[1]</p>
+    <p>Carrera: $estudiante[2]</p>
+    <p>Trámite: $estudiante[4]</p>
+$else:
+    <p><b>La fila está vacía. No hay nadie a quien atender.</b></p>
+<p><a href="/">Regresar</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+$def with (estudiante)
+<html>
+<body>
+<h1>Consultar siguiente estudiante</h1>
+$if estudiante:
+    <p>El siguiente en la fila es: <b>$estudiante[3]</b></p>
+    <p>Matrícula: $estudiante[1]</p>
+    <p>Carrera: $estudiante[2]</p>
+    <p>Trámite: $estudiante[4]</p>
+$else:
+    <p><b>La fila está vacía. No hay ningún estudiante esperando.</b></p>
+<p><a href="/">Regresar</a></p>
+</body>
+</html>

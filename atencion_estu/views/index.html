@@ -1,0 +1,18 @@
+$def with (mensaje)
+<html>
+<body>
+<h1>Ventanilla de servicios escolares</h1>
+$if mensaje:
+    <p>$mensaje</p>
+<form method="POST" action="/">
+    Matrícula: <input type="text" name="matricula"><br>
+    Carrera: <input type="text" name="carrera"><br>
+    Nombre: <input type="text" name="nombre"><br>
+    Trámite: <input type="text" name="tramite"><br>
+    <button type="submit">Agregar a la fila</button>
+</form>
+<p><a href="/atender">Atender siguiente</a></p>
+<p><a href="/siguiente">Consultar siguiente</a></p>
+<p><a href="/estado">Ver fila completa</a></p>
+</body>
+</html>
